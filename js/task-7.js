@@ -1,7 +1,7 @@
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
 const isLoginValid = function (login) {
-  if (3 < login.length < 17) return true;
+  if (3 < login.length && login.length < 17) return true;
   return false;
 };
 
@@ -25,5 +25,3 @@ console.log(addLogin(logins, "Ajax")); // 'Логин успешно добав�
 console.log(addLogin(logins, "robotGoogles")); // 'Такой логин уже используется!'
 console.log(addLogin(logins, "Zod")); // 'Ошибка! Логин должен быть от 4 до 16 символов'
 console.log(addLogin(logins, "jqueryisextremelyfast")); // 'Ошибка! Логин должен быть от 4 до 16 символов'
-
-console.log(logins);
